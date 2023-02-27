@@ -13,7 +13,7 @@ class Account(models.Model):
     bio = models.CharField(max_length=200 , null=True , blank=True)
     link = models.CharField(max_length=30 , null=True , blank=True )
     age = models.CharField(max_length=3 , null=True , blank=True)
-    online_time = models.CharField(max_length=15 , null=True , blank=True)
+    online_time = models.CharField(max_length=20 , null=True , blank=True)
     img_end = models.CharField(max_length=200 , null=True , blank=True)
     tip = models.CharField(max_length=10)
     time = models.CharField(max_length=20)
