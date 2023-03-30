@@ -37,6 +37,7 @@ class Account_Chats(models.Model):
     message_end = models.CharField(max_length=1000)
     message_end_user_id = models.CharField(max_length=20)
     end_time = models.CharField(max_length=200)
+    message_end_time = models.CharField(max_length=200)
     acc_id = models.ForeignKey('Account' , on_delete=models.CASCADE, related_name='account_chats')
 
     def __str__(self):
